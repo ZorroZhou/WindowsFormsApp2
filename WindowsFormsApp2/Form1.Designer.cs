@@ -61,6 +61,7 @@
             // 
             this.menuItem3.Index = 0;
             this.menuItem3.Text = "子窗口1";
+            this.menuItem3.Click += new System.EventHandler(this.menuItem3_Click);
             // 
             // menuItem4
             // 
@@ -74,12 +75,15 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1225, 745);
+            this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Menu = this.mainMenu1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "父窗口";
             this.ResumeLayout(false);
 
         }
