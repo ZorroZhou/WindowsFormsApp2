@@ -45,6 +45,7 @@ namespace WindowsFormsApp2
         private void button2_Click(object sender, EventArgs e)
         {
             Form2 fm2 = new Form2();
+            fm2.MdiParent = this.MdiParent;//修改后的代码
             fm2.Show();
             this.Close();
         }

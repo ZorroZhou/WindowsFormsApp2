@@ -32,6 +32,9 @@ namespace WindowsFormsApp2
             {
                 this.Hide();
                 Form3 chidForm3 = new Form3(this.textBox1.Text, this.textBox2.Text, this.comboBox1.SelectedItem.ToString(), textBox3.Text);
+                //实例化Form3窗体，利用 窗体参数 传输数据
+                chidForm3.MdiParent = this.MdiParent;
+                //使打开的窗体和当前的窗体指向同一个父窗体
                 chidForm3.Show();
             }
         }
